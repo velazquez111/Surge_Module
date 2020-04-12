@@ -1,5 +1,5 @@
 #!name=Rewrite AD_YouTube_Spotify
-#!desc= 去Youtube和Spotify广告
+#!desc= Remove Ads in Youtube & Spotify
 
 [URL Rewrite]
 # YouTube
