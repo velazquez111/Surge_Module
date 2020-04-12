@@ -1,0 +1,36 @@
+#!name=Rewrite AD_YouTube_Spotify
+#!desc= 去Youtube和Spotify广告
+
+[URL Rewrite]
+# YouTube
+^https?:\/\/.+\.googlevideo\.com\/.+&oad - reject header
+^https?:\/\/.+\.googlevideo\.com\/.+ctier - reject header
+^https?:\/\/.+\.googlevideo\.com\/ptracking\?pltype=adhost  - reject
+^https?:\/\/.+\.googlevideo\.com\/videogoodput\?  - reject
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+ad_ - reject header
+^https?:\/\/youtubei\.googleapis\.com\/youtubei\/.+log_ - reject header
+^https?:\/\/play.googleapis.com/log*  - reject
+^https?:\/\/www.googleapis.com/adsmeasurement/*  - reject
+^https?:\/\/.+\.youtube\.com\/api\/stats\/ads - reject header
+^https?:\/\/.+\.youtube\.com\/api\/stats\/.+adformat - reject header
+^https?:\/\/.+\.youtube\.com\/pagead\/ - reject header
+^https?:\/\/.+\.youtube\.com\/ptracking - reject header
+^https?:\/\/.+\.youtube\.com\/.+get_ads  - reject
+^https?:\/\/.+\.youtube\.com\/error_204  - reject
+^https?:\/\/.+\.youtube\.com\/get_midroll_ - reject header
+
+# Spotify
+^https?://spclient.wg.spotify.com/ad-logic/*  - reject
+^https?://spclient.wg.spotify.com/ads/*  - reject
+^https?://spclient.wg.spotify.com/.+ad_slot  - reject
+^https?://spclient.wg.spotify.com/.+banners  - reject
+^https?://spclient.wg.spotify.com/.+canvases  - reject
+^https?://spclient.wg.spotify.com/.+cards  - reject
+^https?://spclient.wg.spotify.com/.+crashlytics  - reject
+^https?://spclient.wg.spotify.com/.+doubleclick.net  - reject
+^https?://spclient.wg.spotify.com/.+enabled-tracks  - reject
+^https?://spclient.wg.spotify.com/.+event  - reject
+^https?://spclient.wg.spotify.com/.+promoted_offer  - reject
+
+[MITM]
+hostname= %APPEND% *.googlevideo.com,*.youtube.com,youtubei.googleapis.com,spclient.wg.spotify.com
