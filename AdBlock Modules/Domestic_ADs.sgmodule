@@ -25,5 +25,6 @@ WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,pattern=
 QQNews.js = requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/QQNews.js,pattern=https://r\.inews\.qq.com\/get(QQNewsUnreadList|RecommendList),type=http-response
 # Toutiao
 Toutiao.js = requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/Toutiao.js,pattern=^https://[a-zA-Z]*\.snssdk\.com/api/news/feed/v88/,type=http-response
+
 [MITM]
 hostname = %APPEND% api.zhihu.com, www.zhihu.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, mp.weixin.qq.com, r.inews.qq.com, *.snssdk.com
