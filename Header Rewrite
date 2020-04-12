@@ -1,0 +1,21 @@
+#!name=Header Rewrite
+#!desc= dolve some problems
+
+
+[Header Rewrite]
+^*.bdimg.com header-del Referer
+^*.qpic.cn header-replace User-Agent "WeChat/6.5.22.32 CFNetwork/889.9 Darwin/17.2.0"
+^*.qpic.cn header-del Referer
+^*.ph.126.net header-del Referer
+^*.zhimg.com header-del Referer
+^*.cnbetacdn.com header-del Referer
+^*.zhiding.cn header-del Referer
+^*.c114.com.cn header-del Referer
+^https?://www.biquge.com.tw header-del Cookie
+# tieba
+^https?+:\/\/(?:c\.)?+tieba\.baidu\.com\/(?>f|p) header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
+^https?+:\/\/jump2\.bdimg\.com\/(?>f|p) header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
+# zhidao
+^https?+:\/\/zhidao\.baidu\.com header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
+# zhihu
+^https?+:\/\/www\.zhihu\.com\/question header-replace User-Agent "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.4 Safari/605.1.15"
