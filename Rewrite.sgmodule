@@ -1,8 +1,7 @@
 #!name=Header Rewrite
-#!desc= dolve some problems
+#!desc= solve some problems
 
 [URL Rewrite]
-# Redirect HTTP to HTTPS
 ^https?:\/\/(www.)?taobao\.com\/ https://taobao.com/ 302
 ^https?:\/\/(www.)?jd\.com\/ https://www.jd.com/ 302
 ^https?:\/\/(www.)?mi\.com\/ https://www.mi.com/ 302
@@ -58,6 +57,7 @@
 ^https?:\/\/(www.)?xshellcn\.com\/ https://www.netsarang.com/zh/xshell/ 302
 ^https?:\/\/(www.)?yuanchengxiezuo\.com\/ https://www.teamviewer.com/ 302
 ^https?:\/\/(www.)?zbrushcn.com/ https://pixologic.com/ 302
+
 
 [Header Rewrite]
 ^*.bdimg.com header-del Referer
