@@ -26,5 +26,9 @@ QQNews.js = requires-body=1,max-size=-1,script-path=https://raw.githubuserconten
 # Toutiao
 Toutiao.js = requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/Toutiao.js,pattern=^https://[a-zA-Z]*\.snssdk\.com/api/news/feed/v88/,type=http-response
 
+# > Aweme
+Aweme.js = script-path=https://Choler.github.io/Surge/Script/Aweme.js,type=http-request,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post)
+Aweme.js = requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js,type=http-response,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post)
+
 [MITM]
-hostname = %APPEND% api.zhihu.com, www.zhihu.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, mp.weixin.qq.com, r.inews.qq.com, *.snssdk.com
+hostname = %APPEND% api.zhihu.com, www.zhihu.com, app.bilibili.com, api.bilibili.com, api.live.bilibili.com, mp.weixin.qq.com, r.inews.qq.com, *.snssdk.com, *.amemv.com, *.aweme.com
