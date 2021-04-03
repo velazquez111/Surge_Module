@@ -27,6 +27,8 @@ if (bundle_id == "com.digitalworkroom.noted") {
         "original_purchase_date_ms": "1617485195000",
         "web_order_line_item_id": "530000315399709",
         "expires_date_ms": "1618089994000",
+        "expires_date": "2099-09-10 23:17:57 Etc/GMT",
+        "expires_date_pst": "2099-09-10 16:17:57 America/Los_Angeles"
         "purchase_date_pst": "2021-04-03 14:26:34 America/Los_Angeles",
         "original_purchase_date": "2021-04-03 21:26:35 Etc/GMT"
       }
