@@ -73,7 +73,7 @@ if(requestURL.indexOf(addLink) != -1){  // 添加外部播放器链接
       fileboxPlay.push({
         Url: host + embyPlugin + 'filebox://play?url='+ encodeURIComponent(videoUrl),
         Name: 'Filebox' + Name
-      })
+      });
 
       let movistproInfo = {
         "url": videoUrl,
