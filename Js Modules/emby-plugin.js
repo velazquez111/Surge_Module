@@ -62,7 +62,7 @@ if(requestURL.indexOf(addLink) != -1){  // 添加外部播放器链接
       });
 
       iinaPlay.push({
-        Url: host + embyPlguin + 'iina://weblink?url='+ encodeURIComponent(videoUrl),
+        Url: host + embyPlguin + 'filebox://play?url='+ encodeURIComponent(videoUrl),
         Name: 'IINA'+ Name
       });
       
