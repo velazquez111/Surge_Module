@@ -9,7 +9,6 @@ if(requestURL.indexOf(addLink) != -1){  // 添加外部播放器链接
   let infusePlay = [];
   let nplayerPlay = [];
   let vlcPlay = [];
-  let iinaPlay = [];
   let fileboxPlay = [];
   let movistproPlay = [];
   let shuDownload = [];
@@ -61,15 +60,10 @@ if(requestURL.indexOf(addLink) != -1){  // 添加外部播放器链接
         Name: 'VLC'+ Name
       });
 
-      iinaPlay.push({
-        Url: host + embyPlguin + 'filebox://play?url='+ encodeURIComponent(videoUrl),
-        Name: 'IINA'+ Name
-      });
-      
       fileboxPlay.push({
-              Url: host + embyPlguin + 'filebox://play?url='+ encodeURIComponent(videoUrl),
-              Name: 'FileBox'+ Name
-            });
+        Url: host + embyPlguin + 'filebox://play?url='+ encodeURIComponent(videoUrl),
+        Name: 'Filebox'+ Name
+      });
 
       let movistproInfo = {
         "url": videoUrl,
